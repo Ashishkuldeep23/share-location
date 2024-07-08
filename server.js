@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 
-const PORT = 3000
+const PORT = 3000 || process.env.PORT
 
 server.listen(PORT, () => {
     console.log(`> Express app running at ${PORT}`)
